@@ -18,5 +18,19 @@ namespace UnitTestProject1
             chrome.Quit();
 
         }
+        [TestMethod, TestCategory("BuildAutomation")]
+        public void LoginErrado()
+        {
+            IWebDriver chrome = new ChromeDriver();
+            try{
+            chrome.Manage().Window.Maximize();
+            chrome.Url = "https://www.google.com.br/?gws_rd=ssl";
+            Assert.AreEqual("TESTE1","TESTE2","ERRO NO TESTE");
+            }catch(Expection ex){
+                throw ex;
+            }finally{
+                chrome.Quit();
+            }
+        }
     }
 }

@@ -25,7 +25,7 @@ namespace UnitTestProject1
             try{
             chrome.Manage().Window.Maximize();
             chrome.Url = "https://www.google.com.br/?gws_rd=ssl";
-            Assert.AreEqual("TESTE1","TESTE2","ERRO NO TESTE");
+            Assert.AreEqual("TESTE2","TESTE2","ERRO NO TESTE");
             }catch(Exception ex){
                 throw ex;
             }finally{

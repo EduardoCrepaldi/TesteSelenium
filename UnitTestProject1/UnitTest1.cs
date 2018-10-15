@@ -8,7 +8,7 @@ namespace UnitTestProject1
     [TestClass]
     public class UnitTest1
     {
-        [TestMethod]
+        [TestMethod, TestCategory("BuildAutomation")]
         public void TestMethod1()
         {
             
